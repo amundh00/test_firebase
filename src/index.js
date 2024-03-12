@@ -14,13 +14,13 @@ const firebaseConfig = {
 
 
   //init firebase app
-  initializeApp(firebaseConfig);
+  initializeApp(firebaseConfig)
 
   // init services
-  const db = getFirestore();
+  const db = getFirestore()
 
   // collection ref
-  const colRef = collection(db, 'opening_hours');
+  const colRef = collection(db, 'beers')
 
   // get collection data
   getDocs(colRef)
